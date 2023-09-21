@@ -1,0 +1,257 @@
+/* &display=swap&subset=cyrillic-ext */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
+
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+    /* по умолчанию */
+}
+
+body {
+    line-height: 1;
+    background-color: grey;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* ------------------------------ */
+
+.main {
+    padding: 100px;
+}
+
+/* ._container {
+    max-width: 800px;
+    margin: 0 auto;
+} */
+
+.car__container {
+    transform: translate(1350px);
+}
+
+.car__container:hover{
+    transform: translate(0px);
+    transition: 15s;
+}
+
+.car__top {
+    width: 300px;
+    height: 100px;
+    background-color: rgba(24, 24, 136, 1);
+    transform: skew(-45deg);
+    border-radius: 15px 0 0 0;
+    outline: 5px solid rgb(9, 9, 95);
+    margin-left: 200px;
+}
+
+.top {}
+
+.top__first-window {
+    display: inline-block;
+    width: 10px;
+    height: 100px;
+    background-color: rgb(9, 9, 95);
+    position: relative;
+    left: 100px;
+    transform: skew(25deg);
+    /* transform: skewX(-45deg);
+    background-color: rgb(33, 33, 169);
+    border-radius: 15px 0px 0 0 ;
+    position: relative;
+    left: 48px; */
+}
+
+.top__second-window {
+    display: inline-block;
+    width: 10px;
+    height: 100px;
+    background-color: rgb(9, 9, 95);
+    position: relative;
+    left: 100px;
+    transform: skew(25deg);
+}
+
+.top__third-window {
+    display: inline-block;
+    width: 10px;
+    height: 100px;
+    background-color: rgb(9, 9, 95);
+    position: relative;
+    left: 195px;
+    transform: skew(50deg);
+}
+
+.top__tail {
+    display: inline-block;
+    width: 135px;
+    height: 100px;
+    position: relative;
+    left: 200px;
+    transform: skew(50deg);
+    outline: 5px solid rgb(9, 9, 95);
+    background-color: rgba(24, 24, 136, 1);
+    border-radius: 0 10px 0 0;
+}
+
+.car__middle {
+    width: 630px;
+    height: 150px;
+    background-color: bisque;
+    position: relative;
+    right: 40px;
+    border: 5px solid rgb(9, 9, 95);
+    border-radius: 50px 0 0 80px;
+    transform: skew(-15deg);
+    box-shadow: 3px 3px 15px black;
+}
+
+.middle::before {
+    display: inline-block;
+    content: "";
+    width: 560px;
+    height: 2px;
+    background-color: rgb(9, 9, 95);
+    position: relative;
+    left: 50px;
+}
+
+.middle::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(241, 115, 12);
+    position: relative;
+    top: -465px;
+    left: 8px;
+    border-radius: 100% 0% 26% 74% / 100% 0% 100% 0%;
+    transform: skew(-20deg);
+}
+
+.middle__hood {
+    background-color: rgb(9, 9, 95);
+    width: 3px;
+    height: 143px;
+    position: relative;
+    top: -17px;
+    left: 163px;
+}
+
+.middle__first-door {
+    background-color: rgb(9, 9, 95);
+    width: 3px;
+    height: 155px;
+    position: relative;
+    top: -170px;
+    left: 300px;
+}
+
+.middle__second-door {
+    background-color: rgb(9, 9, 95);
+    width: 3px;
+    height: 150px;
+    position: relative;
+    top: -320px;
+    left: 460px;
+}
+
+.middle__second-door::after{
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 45px;
+    background-color: red;
+    border-radius: 8px 0px 8px 8px;
+    transform: translate(138px,3px);
+}
+
+.wheel__front {
+    width: 100px;
+    height: 100px;
+    background: wheat;
+    border-radius: 50%;
+    border: 5px solid rgb(9, 9, 95);
+    position: relative;
+    top: -40px;
+    left: 30px;
+    box-shadow: 2px 3px 3px black;
+}
+
+.wheel__front::before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: brown;
+    transform: translate(28px, 28px);
+}
+
+.wheel__back {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: wheat;
+    border-radius: 50%;
+    border: 5px solid rgb(9, 9, 95);
+    position: relative;
+    top: -140px;
+    left: 430px;
+    box-shadow: 2px 3px 3px black;
+}
+
+.wheel__back::before{
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: brown;
+    transform: translate(28px,28px);
+}
